@@ -1,0 +1,182 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #f1f3f7;
+    color: #222;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 28px 22px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #00000012;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    color: #263238;
+}
+
+.descricao {
+    color: #666;
+    line-height: 1.5;
+}
+
+.legenda {
+    margin: 22px 0;
+    text-align: left;
+    font-size: 13px;
+}
+
+.legenda p {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.exemplo {
+    width: 27px;
+    height: 27px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.tabuleiro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    margin: 25px 0;
+}
+
+.linha {
+    display: flex;
+    gap: 7px;
+}
+
+.letra {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #d5d9df;
+    border-radius: 6px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.correta {
+    background: #55a86a;
+    border-color: #55a86a;
+    color: white;
+}
+
+.presente {
+    background: #e2b341;
+    border-color: #e2b341;
+    color: white;
+}
+
+.errada {
+    background: #7b818a;
+    border-color: #7b818a;
+    color: white;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #d5d9df;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4778d0;
+}
+
+button {
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#enviar {
+    background: #4778d0;
+    color: white;
+}
+
+#enviar:hover {
+    background: #315fae;
+}
+
+.secundario {
+    width: 100%;
+    background: #e8ebf0;
+    color: #263238;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#mensagem {
+    min-height: 24px;
+    margin: 18px 0;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+@media (max-width: 380px) {
+    .container {
+        padding: 20px 12px;
+    }
+
+    .letra {
+        width: 42px;
+        height: 42px;
+        font-size: 19px;
+    }
+
+    .linha {
+        gap: 5px;
+    }
+}
